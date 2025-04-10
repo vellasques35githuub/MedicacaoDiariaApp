@@ -4,7 +4,14 @@
              x:Class="MedicacaoDiariaApp.VIews.EditarMedicamento"
              
              Title="EditarMedicamento">
-    <VerticalStackLayout>
-        <Label />
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Salvar" Clicked="ToolbarItem_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <VerticalStackLayout Spacing="10" Padding="10">
+        <Label Text="Descrição do Medicamento:" />
+        <Entry x:Name="txt_descricao" Text="{Binding Descricao}" />
+        
     </VerticalStackLayout>
 </ContentPage>
